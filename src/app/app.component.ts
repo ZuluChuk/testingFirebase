@@ -44,7 +44,7 @@ export class AppComponent implements OnInit {
     this.isFetching = true;
     this.http
       .get<{ [key: string]: PostModel }>(
-        'https://ng-complete-guide-c56d3.firebaseio.com/posts.json'
+        'https://ng-angular-8fd2e.firebaseio.com/posts.json'
       )
       .pipe(
         map(responseData => {
